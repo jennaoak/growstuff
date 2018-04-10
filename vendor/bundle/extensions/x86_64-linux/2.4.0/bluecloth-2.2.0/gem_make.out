@@ -1,0 +1,1213 @@
+current directory: /home/sysadmin/devEnv/growstuff/vendor/bundle/gems/bluecloth-2.2.0/ext
+/usr/local/rvm/rubies/ruby-2.4.1/bin/ruby -r ./siteconf20180407-14761-eqn4t4.rb extconf.rb
+checking for srand()... yes
+checking for random()... yes
+checking for bzero() in string.h,strings.h... yes
+checking for strcasecmp()... yes
+checking for strncasecmp()... yes
+checking for mkdio.h... yes
+checking for ruby/encoding.h... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/sysadmin/devEnv/growstuff/vendor/bundle/gems/bluecloth-2.2.0/ext
+make "DESTDIR=" clean
+
+current directory: /home/sysadmin/devEnv/growstuff/vendor/bundle/gems/bluecloth-2.2.0/ext
+make "DESTDIR="
+compiling Csio.c
+In file included from Csio.c:4:0:
+Csio.c: In function ‘Csputc’:
+cstring.h:22:24: warning: operation on ‘iot->size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+Csio.c:14:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(*iot) = c;
+     ^
+Csio.c: In function ‘Csprintf’:
+Csio.c:29:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+  siz = vsnprintf(T(*iot)+S(*iot), ALLOCATED(*iot)-S(*iot), fmt, ptr);
+  ^
+Csio.c:29:2: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+Csio.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling bluecloth.c
+compiling css.c
+In file included from css.c:16:0:
+css.c: In function ‘mkd_css’:
+cstring.h:22:24: warning: operation on ‘f.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+css.c:57:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(f) = 0;
+      ^
+css.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling docheader.c
+compiling emmatch.c
+In file included from emmatch.c:16:0:
+emmatch.c: In function ‘emfill’:
+cstring.h:22:24: warning: operation on ‘p->b_text.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+emmatch.c:79:4: note: in expansion of macro ‘EXPAND’
+    EXPAND(p->b_text) = p->b_char;
+    ^
+emmatch.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling generate.c
+In file included from generate.c:16:0:
+generate.c: In function ‘push’:
+cstring.h:22:24: warning: operation on ‘f->in.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:37:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(f->in) = *bfr++;
+  ^
+generate.c: In function ‘Qchar’:
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:120:9: note: in expansion of macro ‘EXPAND’
+  cur = &EXPAND(f->Q);
+         ^
+cstring.h:22:24: warning: operation on ‘cur->b_text.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:127:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(cur->b_text) = c;
+     ^
+generate.c: In function ‘Qprintf’:
+generate.c:161:5: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+     vsnprintf(bfr, sizeof bfr, fmt, ptr);
+     ^
+generate.c:161:5: warning: function might be possible candidate for ‘gnu_printf’ format attribute [-Wsuggest-attribute=format]
+In file included from generate.c:16:0:
+generate.c: In function ‘Qem’:
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:172:17: note: in expansion of macro ‘EXPAND’
+     block *p = &EXPAND(f->Q);
+                 ^
+cstring.h:22:24: warning: operation on ‘f->Q.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:179:13: note: in expansion of macro ‘EXPAND’
+     memset(&EXPAND(f->Q), 0, sizeof(block));
+             ^
+generate.c: In function ‘___mkd_reparse’:
+cstring.h:22:24: warning: operation on ‘sub.in.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:197:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(sub.in) = 0;
+     ^
+generate.c: In function ‘puturl’:
+generate.c:228:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring("&amp;", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:230:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring("&lt;", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:232:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring("%22", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:236:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring("  ", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:238:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qprintf(f, "%%%02X", c);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: At top level:
+generate.c:458:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     _aprotocol( "https:" ), 
+     ^
+generate.c:459:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     _aprotocol( "http:" ), 
+     ^
+generate.c:460:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     _aprotocol( "news:" ),
+     ^
+generate.c:461:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     _aprotocol( "ftp:" ), 
+     ^
+generate.c: In function ‘isautoprefix’:
+generate.c:473:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (i=0, p=protocol; i < NRPROTOCOLS; i++, p++)
+                             ^
+generate.c: At top level:
+generate.c:497:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+ static linkytype imaget = { 0, 0, "<img src=\"", "\"",
+ ^
+generate.c:497:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:498:9: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+         1, " alt=\"", "\" />", MKD_NOIMAGE|MKD_TAGTEXT, IS_URL };
+         ^
+generate.c:498:9: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:499:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+ static linkytype linkt  = { 0, 0, "<a href=\"", "\"",
+ ^
+generate.c:499:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:500:30: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+                              0, ">", "</a>", MKD_NOLINKS, IS_URL };
+                              ^
+generate.c:500:30: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:510:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { "id:", 3, "<span id=\"", "\"", 0, ">", "</span>", 0, 0 },
+     ^
+generate.c:510:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:510:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:510:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:510:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:511:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { "raw:", 4, 0, 0, 0, 0, 0, MKD_NOHTML, 0 },
+     ^
+generate.c:512:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { "lang:", 5, "<span lang=\"", "\"", 0, ">", "</span>", 0, 0 },
+     ^
+generate.c:512:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:512:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:512:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:512:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:513:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { "abbr:", 5, "<abbr title=\"", "\"", 0, ">", "</abbr>", 0, 0 },
+     ^
+generate.c:513:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:513:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:513:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:513:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:514:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { "class:", 6, "<span class=\"", "\"", 0, ">", "</span>", 0, 0 },
+     ^
+generate.c:514:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:514:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:514:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:514:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c: In function ‘pseudo’:
+generate.c:527:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for ( i=0, r=specials; i < NR(specials); i++,r++ ) {
+                              ^
+generate.c: In function ‘p_or_nothing’:
+generate.c:575:5: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     return p->ref_prefix ? p->ref_prefix : "fn";
+     ^
+generate.c: In function ‘extra_linky’:
+generate.c:594:3: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   p_or_nothing(f), ref->refnumber, ref->refnumber);
+   ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: In function ‘linkyformat’:
+generate.c:632:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      if ( ref->height ) Qprintf(f," height=\"%d\"", ref->height);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:633:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      if ( ref->width ) Qprintf(f, " width=\"%d\"", ref->width);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:637:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring(" title=\"", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘cputc’:
+generate.c:733:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '&':   Qstring("&amp;", f); break;
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:734:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '>':   Qstring("&gt;", f); break;
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:735:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '<':   Qstring("&lt;", f); break;
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘mangle’:
+generate.c:748:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("&#", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:749:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, COINTOSS() ? "x%02x;" : "%02d;", *((unsigned char*)(s++)) );
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: In function ‘code’:
+generate.c:812:6: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qstring("  ", f);
+      ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘delspan’:
+generate.c:823:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<del>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:825:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</del>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘codespan’:
+generate.c:840:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<code>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:842:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</code>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘process_possible_link’:
+generate.c:919:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("<a href=\"", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:922:6: warning: passing argument 1 of ‘mangle’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      mangle("mailto:", 7, f);
+      ^
+generate.c:745:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mangle(char *s, int len, MMIOT *f)
+ ^
+generate.c:925:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("\">", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:927:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("</a>", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:934:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("</a>", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘smartyquote’:
+generate.c:1041:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qprintf(f, "&r%cquo;", typeofquote);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1047:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, "&l%cquo;", typeofquote);
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: At top level:
+generate.c:1089:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'s>",      "rsquo",  0 },
+     ^
+generate.c:1089:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1090:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'t>",      "rsquo",  0 },
+     ^
+generate.c:1090:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1091:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'re>",     "rsquo",  0 },
+     ^
+generate.c:1091:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1092:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'ll>",     "rsquo",  0 },
+     ^
+generate.c:1092:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1093:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'ve>",     "rsquo",  0 },
+     ^
+generate.c:1093:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1094:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'m>",      "rsquo",  0 },
+     ^
+generate.c:1094:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1095:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '\'', "'d>",      "rsquo",  0 },
+     ^
+generate.c:1095:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1096:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '-',  "--",       "mdash",  1 },
+     ^
+generate.c:1096:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1097:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '-',  "<->",      "ndash",  0 },
+     ^
+generate.c:1097:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1098:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '.',  "...",      "hellip", 2 },
+     ^
+generate.c:1098:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1099:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '.',  ". . .",    "hellip", 4 },
+     ^
+generate.c:1099:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1100:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '(',  "(c)",      "copy",   2 },
+     ^
+generate.c:1100:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1101:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '(',  "(r)",      "reg",    2 },
+     ^
+generate.c:1101:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1102:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '(',  "(tm)",     "trade",  3 },
+     ^
+generate.c:1102:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1103:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '3',  "<3/4>",    "frac34", 2 },
+     ^
+generate.c:1103:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1104:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '3',  "<3/4ths>", "frac34", 2 },
+     ^
+generate.c:1104:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1105:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '1',  "<1/2>",    "frac12", 2 },
+     ^
+generate.c:1105:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1106:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '1',  "<1/4>",    "frac14", 2 },
+     ^
+generate.c:1106:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1107:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '1',  "<1/4th>",  "frac14", 2 },
+     ^
+generate.c:1107:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1108:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     { '&',  "&#0;",      0,       3 },
+     ^
+generate.c: In function ‘smartypants’:
+generate.c:1123:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for ( i=0; i < NRSMART; i++)
+                  ^
+generate.c:1126:3: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   Qprintf(f, "&%s;", smarties[i].entity);
+   ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1148:8: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+        Qstring("&ldquo;", f);
+        ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1150:8: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+        Qstring("&rdquo;", f);
+        ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘text’:
+generate.c:1212:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  case 3:     Qstring(tag_text(f) ? "  " : "<br/>", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1216:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("&gt;", f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1222:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("&quot;", f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1230:8: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+        Qstring("![", f);
+        ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1267:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("<sup>",f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1269:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("</sup>", f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1306:7: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+       case '&':   Qstring("&amp;", f);
+       ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1308:7: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+       case '<':   Qstring("&lt;", f);
+       ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1342:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("&lt;", f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1350:4: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+    Qstring("&amp;", f);
+    ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘printheader’:
+generate.c:1381:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("<a name=\"", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1385:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("\"></a>\n", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1387:5: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qprintf(f, "<h%d>", pp->hnumber);
+     ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1391:5: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qprintf(f, "</h%d>", pp->hnumber);
+     ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: At top level:
+generate.c:1397:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+ static char* alignments[] = { "", " align=\"center\"", " align=\"left\"",
+ ^
+generate.c:1397:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1397:1: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1398:7: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+       " align=\"right\"" };
+       ^
+generate.c: In function ‘splat’:
+generate.c:1409:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<tr>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1423:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      alignments[ (colno < S(align)) ? T(align)[colno] : a_NONE ]);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1425:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, "</%s>\n", block);
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1431:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qprintf(f, "<%s></%s>\n", block, block);
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1434:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</tr>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+In file included from generate.c:16:0:
+generate.c: In function ‘printtable’:
+cstring.h:22:24: warning: operation on ‘align.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:1474:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(align) = ( first == ':' ) ? (( last == ':') ? a_CENTER : a_LEFT)
+  ^
+generate.c:1479:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<table>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1480:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<thead>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1481:5: warning: passing argument 2 of ‘splat’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     hcols = splat(hdr, "th", align, 0, f);
+     ^
+generate.c:1403:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ splat(Line *p, char *block, Istring align, int force, MMIOT *f)
+ ^
+generate.c:1482:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</thead>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+In file included from generate.c:16:0:
+cstring.h:22:24: warning: operation on ‘align.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:1488:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(align) = a_NONE;
+      ^
+generate.c:1490:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<tbody>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1492:2: warning: passing argument 2 of ‘splat’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  splat(body, "td", align, 1, f);
+  ^
+generate.c:1403:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ splat(Line *p, char *block, Istring align, int force, MMIOT *f)
+ ^
+generate.c:1493:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</tbody>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1494:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</table>\n", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘printblock’:
+generate.c:1505:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     static char *Begin[] = { "", "<p>", "<p style=\"text-align:center;\">"  };
+     ^
+generate.c:1505:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1505:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1506:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+     static char *End[]   = { "", "</p>","</p>" };
+     ^
+generate.c:1506:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1506:5: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+generate.c:1514:3: warning: passing argument 1 of ‘push’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   push("\003\n", 2, f);
+   ^
+generate.c:34:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ push(char *bfr, int size, MMIOT *f)
+ ^
+generate.c:1520:7: warning: passing argument 1 of ‘push’ discards ‘const’ qualifier from pointer target type [enabled by default]
+       push("\n", 1, f);
+       ^
+generate.c:34:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ push(char *bfr, int size, MMIOT *f)
+ ^
+generate.c: In function ‘printcode’:
+generate.c:1537:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("<pre><code>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1549:5: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Qstring("</code></pre>", f);
+     ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘htmlify’:
+generate.c:1576:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, arguments ? "<%s %s>" : "<%s>", block, arguments);
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1581:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("\n\n", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1585:3: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   Qprintf(f, "</%s>", block);
+   ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: In function ‘definitionlist’:
+generate.c:1596:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("<dl>\n", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1600:3: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   Qstring("<dt>", f);
+   ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1602:3: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   Qstring("</dt>\n", f);
+   ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c:1605:6: warning: passing argument 2 of ‘htmlify’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      htmlify(p->down, "dd", p->ident, f);
+      ^
+generate.c:1572:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ htmlify(Paragraph *p, char *block, char *arguments, MMIOT *f)
+ ^
+generate.c:1609:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("</dl>", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘listdisplay’:
+generate.c:1618:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, "<%cl", (typ==UL)?'u':'o');
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1620:6: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      Qprintf(f, " type=\"a\"");
+      ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1621:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, ">\n");
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c:1624:6: warning: passing argument 2 of ‘htmlify’ discards ‘const’ qualifier from pointer target type [enabled by default]
+      htmlify(p->down, "li", p->ident, f);
+      ^
+generate.c:1572:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ htmlify(Paragraph *p, char *block, char *arguments, MMIOT *f)
+ ^
+generate.c:1628:2: warning: passing argument 2 of ‘Qprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qprintf(f, "</%cl>\n", (typ==UL)?'u':'o');
+  ^
+generate.c:155:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qprintf(MMIOT *f, char *fmt, ...)
+ ^
+generate.c: In function ‘display’:
+generate.c:1654:2: warning: passing argument 2 of ‘htmlify’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  htmlify(p->down, p->ident ? "div" : "blockquote", p->ident, f);
+  ^
+generate.c:1572:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ htmlify(Paragraph *p, char *block, char *arguments, MMIOT *f)
+ ^
+generate.c:1668:2: warning: passing argument 1 of ‘Qstring’ discards ‘const’ qualifier from pointer target type [enabled by default]
+  Qstring("<hr />", f);
+  ^
+generate.c:135:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ Qstring(char *s, MMIOT *f)
+ ^
+generate.c: In function ‘mkd_extra_footnotes’:
+generate.c:1702:5: warning: passing argument 2 of ‘Csprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Csprintf(&m->out, "\n<div class=\"footnotes\">\n<hr/>\n<ol>\n");
+     ^
+In file included from generate.c:16:0:
+cstring.h:73:12: note: expected ‘char *’ but argument is of type ‘const char *’
+ extern int Csprintf(Cstring *, char *, ...);
+            ^
+generate.c:1709:8: warning: passing argument 2 of ‘Csprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+        p_or_nothing(m), t->refnumber);
+        ^
+In file included from generate.c:16:0:
+cstring.h:73:12: note: expected ‘char *’ but argument is of type ‘const char *’
+ extern int Csprintf(Cstring *, char *, ...);
+            ^
+generate.c:1712:8: warning: passing argument 2 of ‘Csprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+        p_or_nothing(m), t->refnumber);
+        ^
+In file included from generate.c:16:0:
+cstring.h:73:12: note: expected ‘char *’ but argument is of type ‘const char *’
+ extern int Csprintf(Cstring *, char *, ...);
+            ^
+generate.c:1713:3: warning: passing argument 2 of ‘Csprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+   Csprintf(&m->out, "</p></li>\n");
+   ^
+In file included from generate.c:16:0:
+cstring.h:73:12: note: expected ‘char *’ but argument is of type ‘const char *’
+ extern int Csprintf(Cstring *, char *, ...);
+            ^
+generate.c:1717:5: warning: passing argument 2 of ‘Csprintf’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     Csprintf(&m->out, "</ol>\n</div>\n");
+     ^
+In file included from generate.c:16:0:
+cstring.h:73:12: note: expected ‘char *’ but argument is of type ‘const char *’
+ extern int Csprintf(Cstring *, char *, ...);
+            ^
+generate.c: In function ‘mkd_document’:
+cstring.h:22:24: warning: operation on ‘p->ctx->out.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+generate.c:1740:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(p->ctx->out) = 0;
+      ^
+generate.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling html5.c
+html5.c: In function ‘mkd_with_html5_tags’:
+html5.c:15:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("ASIDE", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:16:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("FOOTER", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:17:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("HEADER", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:18:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("HGROUP", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:19:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("NAV", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:20:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("SECTION", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c:21:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     mkd_define_tag("ARTICLE", 0);
+     ^
+In file included from html5.c:3:0:
+tags.h:17:6: note: expected ‘char *’ but argument is of type ‘const char *’
+ void mkd_define_tag(char *, int);
+      ^
+html5.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling markdown.c
+markdown.c:104:15: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+ static struct kw comment = { "!--", 3, 0 };
+               ^
+markdown.c: In function ‘quoteblock’:
+markdown.c:753:17: warning: initialization discards ‘const’ qualifier from pointer target type [enabled by default]
+  char *prefix = "class";
+                 ^
+markdown.c:761:12: warning: assignment discards ‘const’ qualifier from pointer target type [enabled by default]
+      prefix="id";
+            ^
+In file included from markdown.c:16:0:
+markdown.c: In function ‘addfootnote’:
+cstring.h:22:24: warning: operation on ‘f->footnotes->size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:965:23: note: in expansion of macro ‘EXPAND’
+     Footnote *foot = &EXPAND(*f->footnotes);
+                       ^
+cstring.h:22:24: warning: operation on ‘foot->tag.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:973:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(foot->tag) = T(p->text)[j];
+  ^
+cstring.h:22:24: warning: operation on ‘foot->tag.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:975:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(foot->tag) = 0;
+     ^
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:981:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(foot->title) = T(p->text)[j++];
+      ^
+cstring.h:22:24: warning: operation on ‘foot->link.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:986:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(foot->link) = T(p->text)[j++];
+  ^
+cstring.h:22:24: warning: operation on ‘foot->link.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:987:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(foot->link) = 0;
+     ^
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:1014:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(foot->title) = T(p->text)[j++];
+      ^
+cstring.h:22:24: warning: operation on ‘foot->title.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+markdown.c:1020:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(foot->title) = 0;
+  ^
+markdown.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling mkdio.c
+In file included from mkdio.c:13:0:
+mkdio.c: In function ‘queue’:
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+mkdio.c:60:3: note: in expansion of macro ‘EXPAND’
+   EXPAND(p->text) = ' ';
+   ^
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+mkdio.c:66:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(p->text) = c;
+      ^
+cstring.h:22:24: warning: operation on ‘p->text.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+mkdio.c:70:5: note: in expansion of macro ‘EXPAND’
+     EXPAND(p->text) = 0;
+     ^
+mkdio.c: In function ‘populate’:
+cstring.h:22:24: warning: operation on ‘line.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+mkdio.c:116:6: note: in expansion of macro ‘EXPAND’
+      EXPAND(line) = c;
+      ^
+mkdio.c: In function ‘mkd_line’:
+cstring.h:22:24: warning: operation on ‘f.out.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+mkdio.c:278:2: note: in expansion of macro ‘EXPAND’
+  EXPAND(f.out) = 0;
+  ^
+mkdio.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling resource.c
+compiling setup.c
+compiling tags.c
+In file included from tags.c:4:0:
+tags.c: In function ‘mkd_define_tag’:
+cstring.h:22:24: warning: operation on ‘blocktags.size’ may be undefined [-Wsequence-point]
+ #define EXPAND(x) (S(x)++)[(S(x) < (x).alloc) \
+                        ^
+tags.c:15:21: note: in expansion of macro ‘EXPAND’
+     struct kw *p = &EXPAND(blocktags);
+                     ^
+tags.c: In function ‘mkd_prepare_tags’:
+tags.c:79:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("STYLE");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:80:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("SCRIPT");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:81:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("ADDRESS");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:82:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("BDO");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:83:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("BLOCKQUOTE");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:84:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("CENTER");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:85:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("DFN");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:86:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("DIV");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:87:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("OBJECT");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:88:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H1");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:89:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H2");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:90:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H3");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:91:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H4");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:92:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H5");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:93:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("H6");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:94:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("LISTING");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:95:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("NOBR");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:96:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("UL");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:97:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("P");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:98:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("OL");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:99:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("DL");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:100:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("PLAINTEXT");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:101:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("PRE");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:102:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("TABLE");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:103:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("WBR");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:104:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("XMP");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:105:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     SC("HR");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:106:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     SC("BR");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:107:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("IFRAME");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c:108:5: warning: passing argument 1 of ‘mkd_define_tag’ discards ‘const’ qualifier from pointer target type [enabled by default]
+     KW("MAP");
+     ^
+tags.c:13:1: note: expected ‘char *’ but argument is of type ‘const char *’
+ mkd_define_tag(char *id, int selfclose)
+ ^
+tags.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling version.c
+compiling xml.c
+xml.c: In function ‘mkd_xmlchar’:
+xml.c:26:17: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '<':   return "&lt;";
+                 ^
+xml.c:27:17: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '>':   return "&gt;";
+                 ^
+xml.c:28:17: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '&':   return "&amp;";
+                 ^
+xml.c:29:17: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '"':   return "&quot;";
+                 ^
+xml.c:30:17: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+     case '\'':  return "&apos;";
+                 ^
+xml.c:33:3: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+   return "";
+   ^
+xml.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+compiling xmlpage.c
+linking shared-object bluecloth_ext.so
+
+current directory: /home/sysadmin/devEnv/growstuff/vendor/bundle/gems/bluecloth-2.2.0/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bluecloth_ext.so ./.gem.20180407-14761-10vs0rb
